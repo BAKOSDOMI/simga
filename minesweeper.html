@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aknakereső</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #c0c0c0;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            margin: 20px auto;
+            border: 2px solid #808080;
+            background-color: #bdbdbd;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #808080;
+            text-align: center;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #e0e0e0;
+        }
+        .cell.hidden {
+            background-color: #bdbdbd;
+        }
+        .cell.mine {
+            background-color: red;
+            color: white;
+        }
+        .cell.flag {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aknakereső</h1>
+    <div id="game-board"></div>
+
+    <script src="minesweeper.js"></script>
+</body>
+</html>
